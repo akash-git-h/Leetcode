@@ -34,8 +34,8 @@ class Trie:
 
 
 def main():
-    keys = ["mobile","mouse","moneypot","monitor"]
-    output = ["Not present in trie","Present in trie"]
+    keys = ["mobile", "mouse", "moneypot", "monitor"]
+    output = ["Not present in trie", "Present in trie"]
     t = Trie()
     for key in keys:
         t.insert(key)
