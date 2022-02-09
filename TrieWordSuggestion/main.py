@@ -3,6 +3,7 @@ class TrieNode:
         self.children = dict()
         self.words = []
 
+
 class Trie:
     def __init__(self):
         self.root = TrieNode()
@@ -30,6 +31,8 @@ class Trie:
         for _ in range(l_remain):
             res.append([])
         return res
+
+
 def main():
     keys = ["mobile","mouse","moneypot","monitor"]
     output = ["Not present in trie","Present in trie"]
@@ -37,5 +40,7 @@ def main():
     for key in keys:
         t.insert(key)
     print("{} ---- {}".format("the",t.search("mouse")))
+
+
 if __name__ == '__main__':
     main()
